@@ -6,7 +6,7 @@ const http = require("http");
 const app = express();
 
 const httpServer = http.createServer(app);
-const port = process.env.PORT || 5555;
+const port = process.env.PORT;
 
 app.use(express.json());
 app.use(
