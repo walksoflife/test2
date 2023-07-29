@@ -14,6 +14,7 @@ const App = () => {
       const res = await makeRequest.get("/users");
 
       setUser(res.data);
+      console.log(res.data);
     };
 
     fetchData();
